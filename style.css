@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right top, #e4e9e8, #e2e7e7, #e1e6e5, #dfe4e4, #dee2e2, #dce0e0, #d9dedd, #d7dcdb, #d4d9d7, #d0d5d3, #cdd2cf, #cacecb);
+}
+
+
+/* outer-container */
+.outer-container{
+    text-align: center;
+}
+.outer-container h1{
+    font-size: 5rem;
+    padding-top: 2rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+.outer-container h1 span{
+    color: white;
+}
+
+
+/* quiz-container */
+.quiz-container{
+    background-color: white;
+    height: 33rem;
+    margin: 2.4rem 20rem;
+    padding: 1rem 0;
+}
+.quiz-container h2{
+    font-size: 2rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+.quiz-container h2 span{
+    color: rgb(167, 132, 126);
+}
+.quiz-container ul{
+    margin-top: 2rem;
+}
+.quiz-container ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.quiz-container label{
+    font-family: 'Berkshire Swash', cursive;
+}
+p{
+    position: relative;
+    top: 7rem;
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+}
+button{
+    margin: 3rem 1rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    height: 3rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: .4rem;
+}
+#pre{
+    background-color: rgb(63, 63, 165);
+    transition: all .01s ease;
+}
+#pre:active{
+    filter: drop-shadow(0px 0px 3px rgb(69, 70, 134));
+}
+#che{
+    background-color: rgb(60, 204, 60);
+    transition: all .01s ease;
+}
+#che:active{
+    filter: drop-shadow(0px 0px 3px rgb(70, 151, 83));
+}
+#nex{
+    background-color: blue;
+    transition: all .01s ease;
+}
+#nex:active{
+    filter: drop-shadow(0px 0px 3px rgb(26, 23, 221));
+}
+
+
+.button-container{
+    position: relative;
+    top: 8rem;
+}
+
+
+/* making animation classes */
+.cr_ani{
+    animation: cr .300s 3 forwards;
+}
+@keyframes cr {
+    50%{
+        color: rgb(142, 230, 115);
+    }
+}
+
+.wr_ani{
+    animation: wr .325s 2 forwards;
+}
+@keyframes wr {
+    50%{
+        color: red;
+    }
+}
+
+.score_ani{
+    animation: score .250s 1 forwards;
+}
+@keyframes score {
+    50%{
+        color: rgb(219, 139, 47);
+    }
+}
