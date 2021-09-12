@@ -72,7 +72,11 @@ function questionset(index){
 
 // next button click function
 nex.addEventListener('click',(e)=>{
+    if(q_no>=29){
+        q_no=0;
+    }else{
     q_no++;
+    }
     questionset(q_no);
 })
 
